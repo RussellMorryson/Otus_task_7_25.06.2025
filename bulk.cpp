@@ -2,7 +2,7 @@
 #include <fstream>
 #include <chrono>
 #include <string>
-#include <Windows.h>
+//#include <Windows.h>
 
 using namespace std;
  
@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     if (argc > 1) {
         auto t0 = std::chrono::high_resolution_clock::now();
         for(int i = 1; i < argc; i++) {            
-            Sleep(1000);
+            //Sleep(1000);
             if (count == commands_limit) {
                 info += argv[i];
                 auto t1 = std::chrono::high_resolution_clock::now();
